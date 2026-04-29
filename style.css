@@ -64,15 +64,21 @@ body {
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 12px 24px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
 }
 
 .nav-link:hover {
   background: rgba(255, 255, 255, 0.4);
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Cards */
@@ -226,14 +232,35 @@ footer p {
 .hearts::before {
   content: "💗   💖   💕   💓";
   position: absolute;
-  width: 100%;
+  left: 10%;
+  width: 20%;
   font-size: 20px;
   opacity: 0.15;
-  animation: rainHearts 18s linear infinite;
+  animation: rainHeartsLeft 18s linear infinite;
   will-change: transform;
 }
 
-@keyframes rainHearts {
+.hearts::after {
+  content: "💗   💖   💕   💓";
+  position: absolute;
+  right: 10%;
+  width: 20%;
+  font-size: 20px;
+  opacity: 0.15;
+  animation: rainHeartsRight 18s linear infinite;
+  will-change: transform;
+}
+
+@keyframes rainHeartsLeft {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
+}
+
+@keyframes rainHeartsRight {
   0% {
     transform: translateY(-10%);
   }
@@ -290,8 +317,9 @@ footer p {
   }
 
   .nav-link {
-    font-size: 0.95rem;
-    padding: 8px 15px;
+    font-size: 0.9rem;
+    width: 50px;
+    height: 50px;
   }
 
   .music-grid {
@@ -334,13 +362,15 @@ footer p {
   }
 
   .nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    justify-content: center;
   }
 
   .nav-link {
-    width: 100%;
-    text-align: center;
+    width: 45px;
+    height: 45px;
+    font-size: 0.8rem;
   }
 
   .music-grid {
