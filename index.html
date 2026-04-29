@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Mommy Love 💌</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 💌</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="hearts"></div>
-
   <header class="hero">
-    <h1 class="fade-in">💌 For You</h1>
-    <p class="typing">Hey… I made this just for you.</p>
+    <div class="container">
+      <h1>💌 For You</h1>
+      <p class="subtitle">A simple message from the heart.</p>
+      <nav>
+        <a href="#letter">Letter</a>
+        <a href="#music">Songs</a>
+        <a href="#promise">Promise</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="message fade-up">
-    <h2>🌙 A Message From Me</h2>
-    <p>I don’t always say things the right way… but I hope you can feel this one.</p>
-    <blockquote>You matter to me more than you think.</blockquote>
-  </section>
+  <main class="container">
 
-  <section class="buttons fade-up">
-    <a href="#letter"><button>💌 Read My Letter</button></a>
-    <a href="#music"><button>🎧 Our Song</button></a>
-    <a href="#promise"><button>🤍 My Promise</button></a>
-  </section>
+    <section class="card fade-in">
+      <h2>🌙 A Message From Me</h2>
+      <p>I don’t always say things the right way, but I hope you can feel this one.</p>
+      <blockquote>You matter to me more than you think.</blockquote>
+    </section>
 
-  <section id="letter" class="fade-up">
-    <h2>💌 My Letter</h2>
-    <p>I know I’m not perfect. I mess up, I overthink, I fail to understand sometimes.</p>
-    <p>But even with all that…</p>
-    <h3>I don’t want to lose you.</h3>
-  </section>
+    <section id="letter" class="card fade-in">
+      <h2>💌 My Letter</h2>
+      <p>I know I’m not perfect. I mess up, I overthink, and I fail to understand sometimes.</p>
+      <p>But even with all that…</p>
+      <p><strong>I don’t want to lose you.</strong></p>
+    </section>
 
-  <section id="music" class="fade-up">
-    <h2>🎧 Our Song</h2>
-    <ul>
-      <li><a href="https://www.youtube.com/results?search_query=Torete+Moonstar88" target="_blank">💖 Torete – Moonstar88</a></li>
-      <li><a href="https://www.youtube.com/results?search_query=Leonora+Sugarcane" target="_blank">🌙 Leonora – Sugarcane</a></li>
-      <li><a href="https://www.youtube.com/results?search_query=Mundo+IV+of+Spades" target="_blank">🌍 Mundo – IV of Spades</a></li>
-      <li><a href="https://www.youtube.com/results?search_query=Secret+Door+Arctic+Monkeys" target="_blank">🚪 Secret Door – Arctic Monkeys</a></li>
-    </ul>
-    <p><i>Click any song and think of me…</i></p>
-  </section>
+    <section id="music" class="card fade-in">
+      <h2>🎧 Our Songs</h2>
+      <ul>
+        <li><a href="https://www.youtube.com/results?search_query=Torete+Moonstar88" target="_blank">Torete – Moonstar88</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Leonora+Sugarcane" target="_blank">Leonora – Sugarcane</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Mundo+IV+of+Spades" target="_blank">Mundo – IV of Spades</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Secret+Door+Arctic+Monkeys" target="_blank">Secret Door – Arctic Monkeys</a></li>
+      </ul>
+      <p class="small-text">Songs that remind me of you.</p>
+    </section>
 
-  <section id="promise" class="fade-up">
-    <h2>🤍 My Promise</h2>
-    <ul>
-      <li>✔ I will try to understand you better</li>
-      <li>✔ I will improve myself</li>
-      <li>✔ I will stay</li>
-    </ul>
-  </section>
+    <section id="promise" class="card fade-in">
+      <h2>🤍 My Promise</h2>
+      <ul>
+        <li>I will try to understand you better</li>
+        <li>I will continue improving myself</li>
+        <li>I will stay</li>
+      </ul>
+    </section>
 
-  <footer class="fade-up">
-    <h2>✨ Final Words</h2>
-    <p><b>You’re not just someone I love… You’re someone I’m afraid to lose.</b></p>
+  </main>
+
+  <footer>
+    <p>You’re not just someone I love… You’re someone I’m afraid to lose.</p>
   </footer>
 
   <script src="script.js"></script>
