@@ -7,50 +7,62 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  
   <div class="hearts"></div>
 
   <header class="hero">
     <div class="container">
-      <h1>💌 For You</h1>
+      <h1 class="hero-title">💌 For You</h1>
       <p class="subtitle">A simple message from the heart.</p>
-      <nav>
-        <a href="#letter">Letter</a>
-        <a href="#music">Songs</a>
-        <a href="#promise">Promise</a>
+      <nav class="nav">
+        <a href="#letter" class="nav-link">Letter</a>
+        <a href="#music" class="nav-link">Songs</a>
+        <a href="#promise" class="nav-link">Promise</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main class="container main-content">
 
     <section class="card fade-in">
       <h2>🌙 A Message From Me</h2>
-      <p>I don’t always say things the right way, but I hope you can feel this one.</p>
+      <p>I don't always say things the right way, but I hope you can feel this one.</p>
       <blockquote>You matter to me more than you think.</blockquote>
     </section>
 
     <section id="letter" class="card fade-in">
       <h2>💌 My Letter</h2>
-      <p>I know I’m not perfect. I mess up, I overthink, and I fail to understand sometimes.</p>
+      <p>I know I'm not perfect. I mess up, I overthink, and I fail to understand sometimes.</p>
       <p>But even with all that…</p>
-      <p><strong>I don’t want to lose you.</strong></p>
+      <p><strong>I don't want to lose you.</strong></p>
     </section>
 
-    <section id="music" class="music-section">
+    <section id="music" class="music-section fade-in">
       <h2>🎧 Our Songs</h2>
-      <div class="music-card">
-        <a href="https://www.youtube.com/results?search_query=Torete+Moonstar88" target="_blank">💖 Torete – Moonstar88</a>
-        <a href="https://www.youtube.com/results?search_query=Leonora+Sugarcane" target="_blank">🌙 Leonora – Sugarcane</a>
-        <a href="https://www.youtube.com/results?search_query=Mundo+IV+of+Spades" target="_blank">🌍 Mundo – IV of Spades</a>
-        <a href="https://www.youtube.com/results?search_query=Secret+Door+Arctic+Monkeys" target="_blank">🚪 Secret Door – Arctic Monkeys</a>
+      <div class="music-grid">
+        <a href="https://www.youtube.com/results?search_query=Torete+Moonstar88" target="_blank" class="music-card">
+          <span class="music-icon">💖</span>
+          <span class="music-title">Torete – Moonstar88</span>
+        </a>
+        <a href="https://www.youtube.com/results?search_query=Leonora+Sugarcane" target="_blank" class="music-card">
+          <span class="music-icon">🌙</span>
+          <span class="music-title">Leonora – Sugarcane</span>
+        </a>
+        <a href="https://www.youtube.com/results?search_query=Mundo+IV+of+Spades" target="_blank" class="music-card">
+          <span class="music-icon">🌍</span>
+          <span class="music-title">Mundo – IV of Spades</span>
+        </a>
+        <a href="https://www.youtube.com/results?search_query=Secret+Door+Arctic+Monkeys" target="_blank" class="music-card">
+          <span class="music-icon">🚪</span>
+          <span class="music-title">Secret Door – Arctic Monkeys</span>
+        </a>
       </div>
       <p class="small-text">Songs that remind me of you.</p>
     </section>
 
     <section id="promise" class="card fade-in">
       <h2>🤍 My Promise</h2>
-      <ul>
+      <ul class="promise-list">
         <li>I will try to understand you better</li>
         <li>I will continue improving myself</li>
         <li>I will stay</li>
@@ -60,7 +72,7 @@
   </main>
 
   <footer>
-    <p>You’re not just someone I love… You’re someone I’m afraid to lose.</p>
+    <p>You're not just someone I love… You're someone I'm afraid to lose.</p>
   </footer>
 
   <script src="script.js"></script>
