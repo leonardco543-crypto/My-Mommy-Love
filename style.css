@@ -1,64 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f7f3f0;
-  color: #2f2f2f;
-  line-height: 1.6;
-}
-
-.container {
-  width: 90%;
-  max-width: 800px;
-  margin: auto;
-}
-
-.hero {
-  background: #d8c3c5;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-}
-
-.subtitle {
-  margin-top: 10px;
-  color: #5a4a4d;
-}
-
-nav {
-  margin-top: 20px;
-}
-
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #3d2c2e;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.card {
-  background: white;
-  margin: 30px 0;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-h2 {
-  margin-bottom: 15px;
-  color: #6d4c57;
-}
 
 blockquote {
   margin-top: 15px;
@@ -74,10 +14,6 @@ ul {
 
 li {
   margin: 10px 0;
-}
-
-a {
-  color: #6d4c57;
 }
 
 .small-text {
@@ -103,4 +39,32 @@ footer {
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hearts::before {
+  content: "💗   💖   💕   💓";
+  position: absolute;
+  width: 100%;
+  font-size: 20px;
+  opacity: 0.35;
+  animation: rainHearts 18s linear infinite;
+}
+
+@keyframes rainHearts {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(110vh);
+  }
 }
