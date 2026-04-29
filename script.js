@@ -1,9 +1,9 @@
-const faders = document.querySelectorAll('.fade-up');
+const elements = document.querySelectorAll('.fade-in');
 
 window.addEventListener('scroll', () => {
-  faders.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if (position < window.innerHeight - 50) {
       el.classList.add('show');
     }
   });
